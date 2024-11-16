@@ -13,6 +13,7 @@ body {
 /* Hero Section */
 .hero {
   background-image: url('../images/face.png');
+  opacity: 0.8;
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -127,7 +128,7 @@ form button:hover {
 
 /* Efectos de hover en las tarjetas */
 .card {
-  background: linear-gradient(135deg, rgb(236, 233, 235), #f4f3f8); /* Fondo con gradiente */
+  background: linear-gradient(135deg, #ece9eb, #f4f3f8); /* Fondo con gradiente */
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
