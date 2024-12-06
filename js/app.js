@@ -1,24 +1,19 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const testimonials = document.querySelectorAll(".testimonial");
-    let current = 0;
-  
-    function showTestimonial(index) {
-      testimonials.forEach((testimonial, i) => {
-        if (i === index) {
-          testimonial.classList.add("active");
-        } else {
-          testimonial.classList.remove("active");
-        }
-      });
-    }
-  
-    function startAnimation() {
-      setInterval(() => {
-        showTestimonial(current);
-        current = (current + 1) % testimonials.length;
-      }, 3000); // Cambia cada 3 segundos
-    }
-  
-    startAnimation();
-  });
-  
+document.addEventListener('DOMContentLoaded', function() {
+  const items = document.querySelectorAll('.carousel-item');
+  let currentIndex = 0;
+
+  function showNextTestimonial() {
+    // Remove 'active' class from the current item
+    items[currentIndex].classList.remove('active');
+
+    // Calculate the next index
+    currentIndex = (currentIndex + 1) % items.length;
+
+    // Add 'active' class to the next item
+    items[currentIndex].classList.add('active');
+  }
+
+  // Start the carousel
+  setInterval(showNextTestimonial, 3000); // Cambia cada 3 segundos
+
+});
