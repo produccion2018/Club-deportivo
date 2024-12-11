@@ -11,19 +11,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
-  <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
-
-
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a href="#" class="navbar-brand">
-        <img src="./images/logo 1.1.jpg" alt="Logo" class="logo" style="height: 40px;"> <!-- Ajusta el tamaño según sea necesario -->
+        <img src="./images/logo 1.1.jpg" alt="Logo" class="logo">
         BENKOS BIOHÓ
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,16 +35,13 @@
       </div>
     </div>
   </nav>
-  
-  
-  <!-- Título de la página -->
+
   <header id="inicio" class="hero d-flex align-items-center justify-content-center text-center text-white">
     <div class="overlay"></div>
     <h1>Club Deportivo de Fútbol</h1>
     <p>Bienvenido a nuestro club, ¡donde la pasión por el fútbol nunca acaba!</p>
   </header>
 
-  <!-- Sección de Servicios -->
   <section id="servicios" class="container text-center my-5">
     <h2>Servicios</h2>
     <div class="row">
@@ -82,7 +75,6 @@
     </div>
   </section>
 
-  <!-- Sección Nosotros -->
   <section id="nosotros" class="container text-center my-5">
     <h2>Nosotros</h2>
     <p>
@@ -91,7 +83,6 @@
     </p>
   </section>
 
-  <!-- Testimoniales -->
   <section class="testimonial-container py-5">
     <div class="container text-center">
       <h2>Testimoniales</h2>
@@ -116,42 +107,37 @@
             </blockquote>
           </div>
         </div>
-        <!-- Controles -->
         <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
     </div>
   </section>
 
-  <!-- Formulario de contacto -->
-  <section id="contacto" class="py-5">
-    <div class="container">
-      <h2 class="text-center">Contacto</h2>
-      <form id="contactForm">
-        <div class="mb-3">
-          <label for="name" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="message" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
+  <div id="contacto">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+  
+  
+  
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2024 Club Deportivo Benkos Biohó</p>
     <p>
@@ -160,14 +146,12 @@
       <a href="https://www.instagram.com" class="text-white mx-2" target="_blank"><i class="fa fa-instagram"></i></a>
     </p>
   </footer>
-
-
-  <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/app.js"></script>
-</body>
+  <!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
 
-</html>
+  </body>
+  </html>
+  
