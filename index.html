@@ -12,9 +12,18 @@
   <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <!-- Enlace a Font Awesome para los íconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
+  <a href="https://wa.me/1234567890" target="_blank">
+    <i class="fab fa-whatsapp whatsapp-icon"></i>
+  </a>
+  
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a href="#" class="navbar-brand">
@@ -85,8 +94,6 @@
     <p>
       Ser un referente en el ámbito deportivo a nivel departamental y general, mejorando continuamente en el entorno competitivo en cada una de nuestras ramas, desarrollando la actividad social a través de los valores, la recreación y el deporte.
     </p>
-
-    
   </section>
 
   <section id="testimoniales" class="testimonial-container py-5">
@@ -140,17 +147,32 @@
       </div>
       <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
+    
+    <!-- Mapa de Google Embed -->
+    <div class="mt-5">
+        <h3>Nuestra Ubicación</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_URL_HERE" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
   </section>
 
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2024 Club Deportivo Benkos Biohó</p>
-    <p>
-      <a href="https://www.facebook.com" class="text-white mx-2" target="_blank"><i class="fa fa-facebook"></i></a>
-      <a href="https://www.twitter.com" class="text-white mx-2" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.instagram.com" class="text-white mx-2" target="_blank"><i class="fa fa-instagram"></i></a>
-    </p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank" class="social-icon">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com" target="_blank" class="social-icon">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.youtube.com" target="_blank" class="social-icon">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
   </footer>
-
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/app.js"></script>
   <!-- SweetAlert2 JS -->

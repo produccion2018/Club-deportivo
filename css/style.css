@@ -105,6 +105,32 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+
+/* Estilo para la sección de nuestra ubicación */
+#contacto .mt-5 {
+  text-align: center;
+}
+
+#contacto h3 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#contacto iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustar el contenedor para pantallas más pequeñas */
+@media (max-width: 768px) {
+  #contacto iframe {
+    height: 300px;
+  }
+}
+
+
 /* Estilo de la Sección de Contacto */
 #contacto {
   padding: 60px 0;
@@ -377,5 +403,25 @@ footer .text-center {
 
   .card-text {
     font-size: 0.9rem;
+  }
+}
+
+/* Estilo del ícono de WhatsApp */
+.whatsapp-icon {
+  font-size: 40px; /* Tamaño del ícono */
+  color: #25d366;  /* Color del ícono (verde WhatsApp) */
+  position: fixed; /* Posición fija en la pantalla */
+  bottom: 20px;    /* Distancia desde el fondo de la pantalla */
+  right: 20px;     /* Distancia desde la derecha */
+  animation: move-up-down 1s infinite alternate; /* Animación que lo mueve arriba y abajo */
+}
+
+/* Definición de la animación */
+@keyframes move-up-down {
+  0% {
+      transform: translateY(0); /* Comienza en su posición original */
+  }
+  100% {
+      transform: translateY(-10px); /* Se mueve hacia arriba 10px */
   }
 }
