@@ -26,29 +26,49 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-/* Barra de navegación */
+/* Estilo para el navbar */
 .navbar {
-  background-color: #1c1d1c;
-  padding: 10px 0;
+  box-shadow: 0 4px 6px #0000001a; /* Sombra para darle profundidad */
+  background-color: #f8f9fa; /* Fondo claro */
 }
 
-.navbar-brand {
-  font-size: 1.8rem;
-  color: white;
-  font-weight: 600;
+/* Estilo para el logo */
+.navbar-brand .logo {
+  max-height: 50px; /* Controla el tamaño máximo del logo */
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+  border-radius: 50%; /* Hace el logo circular */
+  box-shadow: 0 0 15px #00ff0080; /* Efecto de iluminación */
 }
 
-.navbar .nav-link {
-  font-size: 1.1rem;
-  color: white;
-  padding: 10px 15px;
-  font-weight: 500;
-  transition: all 0.3s ease;
+/* Estilo para los enlaces */
+.nav-link {
+  font-weight: bold;
+  color: #000; /* Color principal de los enlaces */
+  transition: color 0.3s ease; /* Suaviza la transición al cambiar de color */
 }
 
-.navbar .nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+.nav-link:hover {
+  color: #008000; /* Color verde al pasar el mouse sobre los enlaces */
+  text-decoration: underline; /* Subraya al pasar el mouse */
+}
+
+/* Estilo del botón Toggler (para dispositivos pequeños) */
+.navbar-toggler {
+  border: none; /* Elimina el borde predeterminado */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Cambia el icono por uno más estilizado */
+}
+
+/* Responsividad adicional */
+@media (max-width: 991.98px) {
+  .navbar-brand {
+    font-size: 1rem; /* Ajusta el tamaño del texto del brand en pantallas pequeñas */
+  }
+  .navbar-nav .nav-link {
+    text-align: center; /* Centra los enlaces en el menú colapsado */
+  }
 }
 
 /* Hero Section */
