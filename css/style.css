@@ -30,8 +30,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Estilo para el navbar */
 .navbar {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #000000; /* Fondo negro */
+  box-shadow: 0 4px 6px #02f74b;
+  background-color: #00ff0080;
 }
 
 .navbar-brand .logo {
@@ -43,12 +43,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-link {
   font-weight: bold;
-  color: #000000; /* Texto negro */
+  color: #f3efef;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #28a745; /* Verde para el hover */
+  color: #28a745;
   text-decoration: underline;
 }
 
@@ -56,9 +56,8 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
-
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='#00ff0080;' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 @media (max-width: 991.98px) {
